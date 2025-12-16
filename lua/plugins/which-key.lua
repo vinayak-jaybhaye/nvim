@@ -1,0 +1,13 @@
+return {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 700
+    end,
+
+    opts = {
+        -- configuration options
+        -- or leave empty to use defaults
+    },
+}
