@@ -37,7 +37,7 @@ return {
                 dotfiles = true,
             },
             git = {
-                enable = false,  -- disable git integration
+                enable = true,  -- enable git integration
             },
         })
 
@@ -48,6 +48,7 @@ return {
         -- keymap.set(mode, key, action, opts)
 
         keymap("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
+        keymap("n", "<leader>et", "<cmd>NvimTreeFocus<CR>", { desc = "Focus NvimTree" })
         keymap("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
         keymap("n", "<leader>ef", "<cmd>NvimTreeFindFile<CR>", { desc = "Find file in tree" })
         keymap("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh tree" })
