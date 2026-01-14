@@ -34,7 +34,8 @@ return {
                 },
             },
             filters = {         -- show hidden files
-                dotfiles = true,
+                dotfiles = false,     -- don't hide dot files
+                git_ignored = false   -- don't hide git ignored files
             },
             git = {
                 enable = true,  -- enable git integration

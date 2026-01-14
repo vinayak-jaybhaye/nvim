@@ -5,6 +5,7 @@ local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>", {desc = "Exit insert mode"})  -- exit insert mode
 keymap.set("n", "<leader>nh", ":nohl<CR>", {desc = "Clear search highlights"})  -- clear search highlights
+keymap.set("n", "x", '"_x', {desc = "Delete character without yanking"})  -- delete character without yanking
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", {desc = "Increment number"})
